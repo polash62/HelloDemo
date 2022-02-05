@@ -18,7 +18,7 @@ class HelloController extends Controller
 
     public function getInfo(){
 
-        return Info::all();
+        return Info::select('id','name','price')->get();
     }
 
 }
